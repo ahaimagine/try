@@ -1,0 +1,56 @@
+.game{
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid #000;
+    margin-left: 30%;
+}
+
+#dino{
+    width: 50px;
+    height: 60px;
+    background-image: url(https://e7.pngegg.com/pngimages/372/920/png-clipart-tyrannosaurus-dino-t-rex-t-rex-chrome-vr-jump-trex-runner-lava-jump-dinosaur-angle-text.png);
+    background-size: 50px 60px;
+    position: relative;
+    top: 140px;
+}
+
+#cactus{
+    width: 20px;
+    height: 40px;
+    background-image: url(https://www.programmersought.com/images/833/16f85b4c4357f69cac435e4974db7561.png);
+    background-size: 20px 40px;
+    position: relative;
+    top: 105px;
+    left: 580px;
+    animation: cactusMov 1s infinite linear;
+}
+@keyframes cactusMov {
+    0%{
+        left: 580px;
+    }
+    100%{
+        left: -20px;
+    }
+}
+
+.jump{
+    animation: jump 0.3s linear;
+}
+@keyframes jump {
+    0%{
+        top: 140px;
+    }
+    30%{
+        top: 120px;
+    }
+    60%{
+        top: 90px;
+    }
+    80%{
+        top: 120px;
+    }
+    100%{
+        top: 140px;
+    }
+    
+}
